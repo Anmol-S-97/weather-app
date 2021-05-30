@@ -22,7 +22,7 @@ function MainUI({placeName, setPlaceName, cityName, setCityName, stateName, sets
             // hourly: 1 
         }
         
-        axios.get('http://api.weatherapi.com/v1/forecast.json', {params})
+        axios.get('https://api.weatherapi.com/v1/forecast.json', {params})
         .then(response => {
             const apiResponse = response.data;
             setCityName(apiResponse.location.name)
